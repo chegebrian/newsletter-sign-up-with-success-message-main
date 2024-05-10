@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* roboto font */
@@ -57,23 +59,46 @@
   --White: hsl(0, 0%, 100%);
 }
 
+body {
+  background-color: var(--Dark-Slate-Grey);
+}
+
+.wrapper {
+  max-width: 375px;
+  border-radius: 1rem;
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  padding: 1rem;
+  /* min-height: 75vh; */
+}
+
+img {
+  width: 100%;
+}
+
 h1 {
   color: var(--Dark-Slate-Grey);
+  padding: 1rem 0;
 }
 
 ul {
-  
-  list-style-position: outside;
+  /* list-style-position: outside; */
 
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 20px;
 }
 
-ul li{
-    padding: 0.5rem;
+ul li {
+  padding: 0.5rem;
 }
 
-::marker{
-    content: url(/assets/images/icon-list.svg);
- 
+::marker {
+  content: url(/assets/images/icon-list.svg);
 }
 
 input,
@@ -94,8 +119,8 @@ input:focus {
 .btn {
   outline: none;
   cursor: pointer;
-letter-spacing: 0.1em;
-  font-size: 1rem;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
 }
 .btn-dark {
   color: var(--White);
@@ -103,4 +128,39 @@ letter-spacing: 0.1em;
 }
 .btn:hover {
   background-color: var(--Charcoal-Grey);
+}
+
+.desktop {
+  display: none;
+}
+
+/* media queries screen above 600px */
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  h1{
+    padding-bottom: 1rem;
+  }
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .img{
+max-width: 370px;
+  }
+
+  .content {
+    max-width: 370px;
+    padding: 2rem;
+  }
 }
