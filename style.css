@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+/* roboto font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* roboto font classes */
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* ## Color variables */
+
+:root {
+  /* ### Primary color */
+
+  --Tomato: hsl(4, 100%, 67%);
+
+  /* ### Neutral colors*/
+
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+h1 {
+  color: var(--Dark-Slate-Grey);
+}
+
+ul {
+  
+  list-style-position: outside;
+
+}
+
+ul li{
+    padding: 0.5rem;
+}
+
+::marker{
+    content: url(/assets/images/icon-list.svg);
+ 
+}
+
+input,
+.btn {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid var(--Grey);
+  border-radius: 4px;
+  transition: 0.5s;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid var(--Charcoal-Grey);
+}
+.btn {
+  outline: none;
+  cursor: pointer;
+letter-spacing: 0.1em;
+  font-size: 1rem;
+}
+.btn-dark {
+  color: var(--White);
+  background-color: var(--Dark-Slate-Grey);
+}
+.btn:hover {
+  background-color: var(--Charcoal-Grey);
+}
