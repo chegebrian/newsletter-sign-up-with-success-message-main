@@ -147,6 +147,41 @@ input:focus {
   padding-left: 5.5rem;
 }
 
+.success {
+  max-width: 375px;
+  border-radius: 1rem;
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  align-items: start;
+  margin: 30px auto;
+  padding: 2rem;
+
+}
+
+h2 {
+  font-size:2rem;
+  margin: 1rem 0;
+}
+
+/* .image {
+  padding: 0 0 0 2rem;
+} */
+
+.confirmation{
+  max-width: 370px;
+  
+}
+
+.dismiss{
+  margin-top: 1rem;
+}
+
+.none{
+  display: none;
+}
 /* media queries screen above 600px */
 
 @media only screen and (min-width: 768px) {
@@ -155,6 +190,10 @@ input:focus {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+
+  .none{
+    display: none;
   }
 
   h1 {
