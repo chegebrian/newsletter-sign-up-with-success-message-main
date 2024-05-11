@@ -14,18 +14,13 @@ email.addEventListener("input", () => {
 
 //submit the form
 formEl.addEventListener("submit", (e) => {
-  e.preventDefault();
+//   e.preventDefault();
   // if the email field is valid, we let the form submit
   if (email.validity.valid) {
     email.value = "";
     wrapperEl.classList.add("none");
     successEl.classList.remove("none");
   }
-});
-
-//submit the form
-formEl.addEventListener("submit", (e) => {
-  // if the email field is valid, we let the form submit
   if (!email.validity.valid) {
     // If it isn't, we display an appropriate error message
     showError();
