@@ -21,12 +21,18 @@ formEl.addEventListener("submit", (e) => {
     wrapperEl.classList.add("none");
     successEl.classList.remove("none");
   }
+});
+
+//submit the form
+formEl.addEventListener("submit", (e) => {
+  // if the email field is valid, we let the form submit
   if (!email.validity.valid) {
     // If it isn't, we display an appropriate error message
     showError();
   }
   // Then we prevent the form from being sent by canceling the event
   //   e.preventDefault();
+  e.preventDefault();
 });
 
 // error handling
@@ -45,4 +51,4 @@ function showError() {
 dismissEl.addEventListener("click", (e) => {
   wrapperEl.classList.remove("none");
   successEl.classList.add("none");
-});
+})
