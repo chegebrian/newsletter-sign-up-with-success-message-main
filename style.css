@@ -134,6 +134,19 @@ input:focus {
   display: none;
 }
 
+.email {
+  font-size: 0.75rem;
+}
+
+.error {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--Tomato);
+  vertical-align: baseline;
+  text-align: center;
+  padding-left: 5.5rem;
+}
+
 /* media queries screen above 600px */
 
 @media only screen and (min-width: 768px) {
@@ -144,7 +157,7 @@ input:focus {
     justify-content: space-between;
   }
 
-  h1{
+  h1 {
     padding-bottom: 1rem;
   }
   .mobile {
@@ -155,8 +168,8 @@ input:focus {
     display: block;
   }
 
-  .img{
-max-width: 370px;
+  .img {
+    max-width: 370px;
   }
 
   .content {
