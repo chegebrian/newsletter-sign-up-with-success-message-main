@@ -98,7 +98,7 @@ ul li {
 }
 
 ::marker {
-  content: url(/assets/images/icon-list.svg);
+  content: url(./assets/images/icon-list.svg);
 }
 
 input,
